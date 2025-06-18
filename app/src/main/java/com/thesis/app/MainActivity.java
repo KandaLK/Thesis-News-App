@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -15,7 +14,6 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -25,27 +23,17 @@ import com.google.firebase.database.FirebaseDatabase;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    // UI Components
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Toolbar toolbar;
-
-    // Tab Buttons
     private Button btnTabAll, btnTabSports, btnTabEvents, btnTabFaculty;
-
-    // Firebase
     private FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
 
-    // Session & User Data
     private SessionManager sessionManager;
     private String currentUsername, currentEmail, currentUserId;
-
-    // Fragment Management
     private static final String CURRENT_FRAGMENT_TAG = "current_fragment";
     private String currentFragmentTag = "";
-
-    // Fragment Tags
     private static final String TAG_ALL_NEWS = "all_news";
     private static final String TAG_SPORTS = "sports";
     private static final String TAG_EVENTS = "events";
@@ -137,9 +125,6 @@ public class MainActivity extends AppCompatActivity
         getOnBackPressedDispatcher().addCallback(this, callback);
     }
 
-    /**
-     * Main navigation method that handles fragment switching
-     */
     private void navigateToFragment(String fragmentTag) {
         // Don't recreate if already showing the same fragment
         if (currentFragmentTag.equals(fragmentTag)) {
@@ -162,9 +147,6 @@ public class MainActivity extends AppCompatActivity
         currentFragmentTag = fragmentTag;
     }
 
-    /**
-     * Creates fragment instance based on tag
-     */
     private Fragment createFragmentByTag(String tag) {
         switch (tag) {
             case TAG_ALL_NEWS:
@@ -180,9 +162,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Safely replaces fragment with proper transaction handling
-     */
     private void replaceFragment(Fragment fragment, String tag) {
         try {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -194,17 +173,14 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Updates tab button states
-     */
+
     private void updateTabStates(String activeTag) {
-        // Reset all tabs
         btnTabAll.setSelected(false);
         btnTabSports.setSelected(false);
         btnTabEvents.setSelected(false);
         btnTabFaculty.setSelected(false);
 
-        // Set active tab
+
         switch (activeTag) {
             case TAG_ALL_NEWS:
                 btnTabAll.setSelected(true);
@@ -221,9 +197,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Updates navigation drawer checked state
-     */
     private void updateNavigationDrawerState(String activeTag) {
         switch (activeTag) {
             case TAG_ALL_NEWS:
@@ -241,9 +214,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    /**
-     * Restores fragment state after configuration changes
-     */
     private void restoreFragmentState() {
         Fragment fragment = getSupportFragmentManager().findFragmentByTag(currentFragmentTag);
         if (fragment == null) {

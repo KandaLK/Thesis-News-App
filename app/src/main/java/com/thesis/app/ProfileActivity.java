@@ -13,11 +13,9 @@ import android.view.WindowInsetsController;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -25,8 +23,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import de.hdodenhof.circleimageview.CircleImageView;
+
 
 public class ProfileActivity extends AppCompatActivity {
     private static final String TAG = "ProfileActivity";
@@ -89,27 +87,22 @@ public class ProfileActivity extends AppCompatActivity {
         tvHeaderTitle.setText("My Profile");
     }
     private void configureStatusBar() {
-        // Set status bar color to match your header
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.primary_blue));
 
-        // Make status bar icons dark for better visibility
         setStatusBarIconsAppearance();
     }
 
     private void setStatusBarIconsAppearance() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            // Modern approach for API 30+
             WindowInsetsController controller = getWindow().getInsetsController();
             if (controller != null) {
-                // Use dark icons on light backgrounds
                 controller.setSystemBarsAppearance(
                         WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
                         WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS
                 );
             }
         } else {
-            // Legacy approach for API 23-29
             View decorView = getWindow().getDecorView();
             int flags = decorView.getSystemUiVisibility();
             flags |= View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR;
@@ -118,24 +111,20 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void loadUserData() {
-        // Get user data from intent or shared preferences
         Intent intent = getIntent();
         currentUsername = intent.getStringExtra("username");
         currentEmail = intent.getStringExtra("email");
         currentUserId = intent.getStringExtra("userId");
 
-        // If not in intent, get from shared preferences
         if (currentUsername == null) {
             currentUsername = sharedPreferences.getString(KEY_USERNAME, "User");
             currentEmail = sharedPreferences.getString(KEY_USER_EMAIL, "user@example.com");
             currentUserId = sharedPreferences.getString(KEY_USER_ID, "");
         }
 
-        // Set initial data
         usernameText.setText(currentUsername);
         emailText.setText(currentEmail);
 
-        // Load real-time user data
         if (currentUserId != null && !currentUserId.isEmpty()) {
             loadUserProfileFromDatabase();
         }
@@ -201,7 +190,6 @@ public class ProfileActivity extends AppCompatActivity {
 
                     Log.d(TAG, "Profile image loaded successfully from Base64");
                 } else {
-                    // Use default image if bitmap creation fails
                     profileImage.setImageResource(R.drawable.ic_default_profile);
                     Log.w(TAG, "Failed to create bitmap from Base64 data");
                 }
@@ -210,7 +198,6 @@ public class ProfileActivity extends AppCompatActivity {
                 profileImage.setImageResource(R.drawable.ic_default_profile);
             }
         } else {
-            // Use default image if no Base64 data
             profileImage.setImageResource(R.drawable.ic_default_profile);
             Log.d(TAG, "No profile image data found, using default");
         }
@@ -228,10 +215,7 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     private void setupClickListeners() {
-        // Back button
         btnBack.setOnClickListener(v -> finish());
-
-        // Edit profile button
         btnEditProfile.setOnClickListener(v -> {
             Intent intent = new Intent(ProfileActivity.this, EditProfileActivity.class);
             intent.putExtra("username", currentUsername);
@@ -258,14 +242,12 @@ public class ProfileActivity extends AppCompatActivity {
                                 .setDuration(100);
                     });
 
-            // Show image view dialog or navigate to image view activity
             showImageViewDialog();
         });
     }
 
     private void showImageViewDialog() {
         if (currentProfileImageBase64 != null && !currentProfileImageBase64.isEmpty()) {
-            // You can implement a full-screen image viewer here
             AlertHelper.showInfoSnackbar(findViewById(android.R.id.content),
                     "Profile image preview - Full viewer coming soon!");
         } else {
@@ -278,7 +260,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // Refresh profile data if returning from EditProfileActivity
+        // Refresh profile data
         if (requestCode == 100 && resultCode == RESULT_OK) {
             if (data != null && data.getBooleanExtra("updated", false)) {
                 // Profile was updated, refresh the data
@@ -296,12 +278,10 @@ public class ProfileActivity extends AppCompatActivity {
                 // Sign out from Firebase
                 mAuth.signOut();
 
-                // Clear shared preferences
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.clear();
                 editor.apply();
 
-                // Show success message
                 AlertHelper.showSuccessSnackbar(findViewById(android.R.id.content),
                         "Logged out successfully");
 
@@ -323,7 +303,6 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // Remove listener to prevent memory leaks
         if (profileListener != null && currentUserId != null) {
             mDatabase.child("users").child(currentUserId).removeEventListener(profileListener);
         }

@@ -1,6 +1,5 @@
 package com.thesis.app.utils;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +10,6 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.thesis.app.R;
-
 public class AlertHelper {
 
     public interface DialogCallback {
@@ -173,7 +171,6 @@ public class AlertHelper {
             }
         });
 
-        // Show the dialog
         dialog.show();
     }
 
@@ -202,6 +199,5 @@ public class AlertHelper {
                 })
                 .show();
     }
-
 
 }

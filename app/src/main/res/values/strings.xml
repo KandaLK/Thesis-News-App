@@ -83,7 +83,6 @@
 
     <string name="edit_profile">Edit Profile</string>
     <string name="upload_photo">Upload Photo</string>
-<!--    <string name="username">Username</string>-->
     <string name="email">Email</string>
     <string name="password">Password</string>
 
@@ -105,8 +104,6 @@
     <string name="pasindu_mnaelka">Pasindu Mnaelka</string>
     <string name="profile">Profile</string>
 
-
-        <!-- Dialog strings -->
         <string name="logout_confirmation">Logout Confirmation</string>
         <string name="logout_message">Are you sure you want to logout? You will need to sign in again to access your account.</string>
         <string name="logout_icon">Logout Icon</string>

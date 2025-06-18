@@ -22,9 +22,6 @@
     </style>
 
 
-
-
-
     <style name="RoundedNavigationItem" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">28dp</item>
@@ -73,7 +70,6 @@
     </style>
 
 
-
     <!-- Base Application Theme -->
     <style name="Base.Theme.NewsApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/primary_blue</item>
@@ -117,11 +113,6 @@
         <item name="boxStrokeWidth">2dp</item>
         <item name="android:textColorHint">@color/hint_text</item>
     </style>
-<!--    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">-->
-<!--        <item name="android:windowBackground">@drawable/alert_dialog_background</item>-->
-<!--        <item name="android:windowIsFloating">true</item>-->
-<!--        <item name="android:windowCloseOnTouchOutside">false</item>-->
-<!--    </style>-->
 
     <!-- Button Styles -->
     <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">

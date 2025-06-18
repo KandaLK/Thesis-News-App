@@ -21,9 +21,6 @@ public class SessionManager {
         editor = sharedPreferences.edit();
     }
 
-    /**
-     * Save user login session
-     */
     public void createLoginSession(String userId, String username, String email) {
         editor.putBoolean(KEY_IS_LOGGED_IN, true);
         editor.putString(KEY_USER_ID, userId);
@@ -33,16 +30,10 @@ public class SessionManager {
         editor.apply();
     }
 
-    /**
-     * Check if user is logged in
-     */
     public boolean isLoggedIn() {
         return sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false);
     }
 
-    /**
-     * Get user details from session
-     */
     public String getUserId() {
         return sharedPreferences.getString(KEY_USER_ID, "");
     }
@@ -58,10 +49,6 @@ public class SessionManager {
     public long getLoginTime() {
         return sharedPreferences.getLong(KEY_LOGIN_TIME, 0);
     }
-
-    /**
-     * Check if session is still valid (24 hours)
-     */
     public boolean isSessionValid() {
         if (!isLoggedIn()) return false;
 
@@ -72,17 +59,11 @@ public class SessionManager {
         return (currentTime - loginTime) < sessionDuration;
     }
 
-    /**
-     * Clear session data (logout)
-     */
     public void logoutUser() {
         editor.clear();
         editor.apply();
     }
 
-    /**
-     * Update user information
-     */
     public void updateUserInfo(String username, String email) {
         if (isLoggedIn()) {
             editor.putString(KEY_USERNAME, username);

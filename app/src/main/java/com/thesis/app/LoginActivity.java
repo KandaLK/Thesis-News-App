@@ -79,32 +79,6 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
     }
-//    private void performLogin() {
-//        String email = etEmail.getText().toString().trim();
-//        String password = etPassword.getText().toString().trim();
-//
-//        if (!validateInputs(email, password)) {
-//            return;
-//        }
-//
-//        showLoading(true);
-//
-//        mAuth.signInWithEmailAndPassword(email, password)
-//                .addOnCompleteListener(this, task -> {
-//                    showLoading(false);
-//                    if (task.isSuccessful()) {
-//                        FirebaseUser user = mAuth.getCurrentUser();
-//                        if (user != null) {
-//                            saveUserSession(user);
-//                            showSuccessMessage(Constants.SUCCESS_LOGIN);
-//                            startActivity(new Intent(LoginActivity.this, MainActivity.class));
-//                            finish();
-//                        }
-//                    } else {
-//                        showErrorMessage(getErrorMessage(task.getException()));
-//                    }
-//                });
-//    }
 
     private boolean validateInputs(String email, String password) {
         if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
@@ -119,10 +93,6 @@ public class LoginActivity extends AppCompatActivity {
 
         return true;
     }
-
-
-
-    // Update initializeFirebase() method
     private void initializeFirebase() {
         mAuth = FirebaseAuth.getInstance();
         sessionManager = new SessionManager(this);
@@ -140,7 +110,6 @@ public class LoginActivity extends AppCompatActivity {
         finish();
     }
 
-    // Replace the old saveUserSession method
     private void saveUserSession(FirebaseUser user) {
         String username = user.getDisplayName();
         if (username == null || username.isEmpty()) {
