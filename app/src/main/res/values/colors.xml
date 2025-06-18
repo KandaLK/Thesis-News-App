@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Navigation Drawer Colors -->
+    <color name="drawer_background">#FFFFFF</color>
+    <color name="nav_item_selected">#1976D2</color>
+    <color name="nav_item_pressed">#42A5F5</color>
+    <color name="nav_item_normal">#757575</color>
+    <color name="nav_item_background_selected">#E3F2FD</color>
+    <color name="nav_item_background_normal">#FFFFFF</color>
+    <color name="nav_section_header">#9E9E9E</color>
+
+
+    <!-- Material3 color scheme -->
+    <color name="primary_color">#6750A4</color>
+    <color name="primary_container">#EADDFF</color>
+    <color name="on_primary_container">#21005D</color>
+    <color name="secondary_color">#625B71</color>
+    <color name="background_color">#FFFBFE</color>
+    <color name="on_background">#1C1B1F</color>
+    <color name="on_surface">#1C1B1F</color>
+
+    <!-- Primary Colors -->
+    <color name="primary_blue">#4A90E2</color>
+    <color name="primary_blue_dark">#357ABD</color>
+    <color name="primary_blue_light">#E3F2FD</color>
+    <color name="Min_button">#7AB2D3</color>
+
+    <!-- Surface Colors -->
+    <color name="background_light">#F5F7FA</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="surface_light">#FAFBFC</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1D29</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="text_hint">#9CA3AF</color>
+
+    <!-- Status Colors -->
+    <color name="success_green">#10B981</color>
+    <color name="error_red">#EF4444</color>
+    <color name="warning_orange">#F59E0B</color>
+
+    <!-- Button Colors -->
+    <color name="logout_button">#FF6B6B</color>
+    <color name="logout_button_pressed">#FF5252</color>
+
+    <!-- Other -->
+    <color name="white">#FFFFFF</color>
+    <color name="divider">#E5E7EB</color>
+
+            <!-- Secondary Colors -->
+            <color name="secondary_orange">#FF9800</color>
+            <color name="secondary_orange_dark">#F57C00</color>
+
+            <!-- Text Colors -->
+            <color name="primary_text">#212121</color>
+            <color name="secondary_text">#757575</color>
+            <color name="hint_text">#9E9E9E</color>
+            <color name="input_text">#424242</color>
+
+            <!-- Background Colors -->
+<!--            <color name="background_light">#FAFAFA</color>-->
+            <color name="background_white">#FFFFFF</color>
+            <color name="surface_color">#FFFFFF</color>
+
+    <!-- Add these colors to your res/values/colors.xml -->
+    <color name="primaryBlue">#2196F3</color>
+    <color name="primaryBlueLighter">#42A5F5</color>
+    <color name="tabButtonDefault">#F5F5F5</color>
+    <color name="textSecondary">#757575</color>
+    <color name="primaryBlueDark">#1976D2</color>
+
+</resources>
+
+
+
+
+
+

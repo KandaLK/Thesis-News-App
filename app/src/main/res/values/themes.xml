@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/error_red</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="rippleColor">@color/primary_blue_light</item>
+        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+
+
+
+
+
+    <style name="RoundedNavigationItem" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="NavigationItemTextStyle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="NavigationSectionHeaderStyle" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/nav_section_header</item>
+        <item name="android:textAllCaps">true</item>
+
+    </style>
+
+
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/on_primary_container</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/secondary_color</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorOnBackground">@color/on_background</item>
+
+        <!-- Surface colors -->
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/changes_summary_background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+
+    <!-- Base Application Theme -->
+    <style name="Base.Theme.NewsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="colorSecondary">@color/secondary_orange</item>
+        <item name="colorSecondaryVariant">@color/secondary_orange_dark</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="colorOnSurface">@color/primary_text</item>
+
+        <item name="colorError">@color/error_red</item>
+        <item name="colorOnError">@android:color/white</item>
+
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+
+        <item name="android:statusBarColor">@color/primary_blue</item>
+        <item name="android:navigationBarColor">@color/background_light</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Application Theme -->
+    <style name="Theme.NewsApp" parent="Base.Theme.NewsApp" />
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.NewsApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/background_light</item>
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/main_logo</item>-->
+<!--        <item name="windowSplashScreenAnimationDuration">500</item>-->
+        <item name="postSplashScreenTheme">@style/Theme.NewsApp</item>
+        <item name="android:statusBarColor">@color/primary_blue</item>
+    </style>
+
+    <!-- Text Input Layout Style -->
+    <style name="Widget.NewsApp.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_hint</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="android:textColorHint">@color/hint_text</item>
+    </style>
+<!--    <style name="CustomAlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">-->
+<!--        <item name="android:windowBackground">@drawable/alert_dialog_background</item>-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+<!--        <item name="android:windowCloseOnTouchOutside">false</item>-->
+<!--    </style>-->
+
+    <!-- Button Styles -->
+    <style name="PrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/changes_summary_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="CustomEditText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary_blue</item>
+        <item name="hintTextColor">@color/hint_text</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.NewsApp.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="elevation">4dp</item>
+    </style>
+    <!-- White Button Style -->
+    <style name="WhiteButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/changes_summary_background</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Outline Button Style -->
+    <style name="OutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary_blue</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Danger Button Style -->
+    <style name="DangerButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/logout_button_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="Theme.ThesisNews" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryVariant">@color/primary_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/primary_blue_dark</item>
+        <item name="colorSecondaryVariant">@color/primary_blue_light</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorSurface">@color/card_background</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="ThesisNews.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardMaxElevation">8dp</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="ThesisNews.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primaryBlue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="ThesisNews.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary_blue</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Custom AlertDialog Style -->
+    <style name="CustomAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/primary_text</item>
+        <item name="alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/CustomAlertDialogTitle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/CustomAlertDialogBody</item>
+        <item name="buttonBarPositiveButtonStyle">@style/CustomAlertDialogPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CustomAlertDialogNegativeButton</item>
+    </style>
+
+    <!-- Alert Dialog Container Style -->
+    <style name="CustomAlertDialogStyle" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/CustomAlertDialogShape</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <!-- Alert Dialog Shape -->
+    <style name="CustomAlertDialogShape" parent="ShapeAppearance.Material3.Corner.Medium">
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Alert Dialog Title Style -->
+    <style name="CustomAlertDialogTitle" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Alert Dialog Body Style -->
+    <style name="CustomAlertDialogBody" parent="MaterialAlertDialog.Material3.Body.Text">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Positive Button Style -->
+    <style name="CustomAlertDialogPositiveButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+    </style>
+
+    <!-- Negative Button Style -->
+    <style name="CustomAlertDialogNegativeButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">@color/error_red</item>
+    </style>
+
+    <!-- Custom Outlined Button Style -->
+    <style name="ThesisNews.Button.CustomOutlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary_blue</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:textColor">@color/primary_blue</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="rippleColor">@color/primary_blue_light</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+
+
+
+    <!-- Custom Toolbar Theme -->
+    <style name="CustomToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_blue</item>
+        <item name="colorPrimaryDark">@color/primary_blue_dark</item>
+        <item name="colorAccent">@color/primary_blue</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_back</item>
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="ProfileCardStyle">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@color/card_background</item>
+    </style>
+
+    <!-- Dialog Animation -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+
+    <style name="TabButtonStyle">
+        <item name="android:background">@drawable/tab_button_selector</item>
+        <item name="android:textColor">@color/tab_text_selector</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/Min_button</item>
+        <item name="android:strokeColor">@color/primaryBlue</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+
+
+</resources>

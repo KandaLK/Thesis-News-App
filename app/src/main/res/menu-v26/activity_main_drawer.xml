@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navallnews"
+            android:icon="@drawable/ic_news_placeholder"
+            android:title="Top News"
+            android:iconTint="@color/primaryBlue"/>
+
+        <item
+            android:id="@+id/navsports"
+            android:icon="@drawable/ic_sports"
+            android:title="@string/nav_sports" />
+
+        <item
+            android:id="@+id/navevents"
+            android:icon="@drawable/ic_events"
+            android:title="@string/nav_events" />
+
+        <item
+            android:id="@+id/navfacultynews"
+            android:icon="@drawable/ic_faculty"
+            android:title="@string/nav_faculty_news" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/navprofile"
+                android:icon="@drawable/ic_person"
+                android:title="My profile" />
+
+            <item
+                android:id="@+id/navsettings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/nav_settings" />
+
+            <item
+                android:id="@+id/navlogout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/nav_logout" />
+        </menu>
+    </item>
+
+</menu>
