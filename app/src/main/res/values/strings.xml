@@ -134,5 +134,9 @@
     <string name="nav_settings">Settings</string>
     <string name="nav_logout">Logout</string>
     <string name="change_picture">Change Picture</string>
+    <string name="thesis_news">Thesis News</string>
+    <string name="wisdow_enlight_your_future">Wisdow Enlight Your Future!</string>
+    <string name="app_logo">App Logo</string>
+    <string name="stay_tuned_with_us_to_watch_more_news_beyond_your_reach">Stay tuned with us to watch more news beyond your reach..!</string>
 
 </resources>

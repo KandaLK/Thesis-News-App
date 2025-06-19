@@ -331,14 +331,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
-                        android:text="Stay tuned with us to have more News Beyond your reach..! "
+                        android:text="@string/stay_tuned_with_us_to_watch_more_news_beyond_your_reach"
                         android:textColor="@color/text_secondary"
                         android:textSize="12sp" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="copyright: Thesis News@2025"
+                        android:text="Copyright © 2025 Thesis News. All rights reserved."
                         android:textColor="@color/text_secondary"
                         android:textSize="12sp"
                         android:textStyle="italic" />

@@ -338,22 +338,15 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818044c0-4f8c-45fa-b4cb-b054ecf3a7a4" name="Changes" comment="Layout Add(Base app Layouts)">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_delete_account.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_confirmation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_logout_confirmation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_news_card.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_custom_header.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterDir="false" />
+    <list default="true" id="818044c0-4f8c-45fa-b4cb-b054ecf3a7a4" name="Changes" comment="Layout Add(Last app Layouts Update)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/ProfileActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/SignupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/SignupActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/NewsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/NewsItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/utils/AlertHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/utils/AlertHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,6 +415,8 @@
     </option>
   </component>
   <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\Users\Manelka.00\Desktop\app\new.jks" />
+    <option name="KEY_ALIAS" value="key1" />
     <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
@@ -455,6 +450,7 @@
   "keyToString": {
     "Android App.app.executor": "Run",
     "ApkExportedModule": "Thesis_News_App.app",
+    "ExportApk.ApkPathForThesis_News_App.app": "C:\\Users\\Manelka.00\\Desktop\\ThesisApp\\app",
     "Gradle.ThesisApp [testDebugUnitTest].executor": "Coverage",
     "Gradle.ThesisApp:app [testReleaseUnitTest].executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -471,6 +467,11 @@
     "last_opened_file_path": "C:/Users/Manelka.00/Desktop/ThesisApp/app/src/main/res/layout",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  },
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -659,7 +660,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750309770908</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Layout Add(Last app Layouts Update)">
+      <option name="closed" value="true" />
+      <created>1750310679966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750310679966</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -681,7 +690,8 @@
     <MESSAGE value="First App" />
     <MESSAGE value="First App Updtes" />
     <MESSAGE value="Layout Add(Base app Layouts)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout Add(Base app Layouts)" />
+    <MESSAGE value="Layout Add(Last app Layouts Update)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout Add(Last app Layouts Update)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -730,12 +740,12 @@
       <map>
         <entry key="com.thesis.app">
           <value>
-            <CheckInfo lastCheckTimestamp="1750225948935" />
+            <CheckInfo lastCheckTimestamp="1750316197872" />
           </value>
         </entry>
         <entry key="com.thesis.app.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1750225948963" />
+            <CheckInfo lastCheckTimestamp="1750316197823" />
           </value>
         </entry>
       </map>
