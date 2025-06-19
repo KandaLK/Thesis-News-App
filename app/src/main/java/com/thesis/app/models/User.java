@@ -9,7 +9,6 @@ public class User {
     private long updatedAt;
 
     public User() {
-        // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
     public User(String uid, String username, String email) {

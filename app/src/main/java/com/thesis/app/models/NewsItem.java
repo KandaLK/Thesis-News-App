@@ -10,7 +10,6 @@ public class NewsItem {
     private String formattedDate;
 
     public NewsItem() {
-        // Default constructor for Firebase
     }
 
     public NewsItem(String id, String title, String description, String imageResource,

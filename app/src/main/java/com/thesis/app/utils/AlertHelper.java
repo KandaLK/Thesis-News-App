@@ -57,7 +57,6 @@ public class AlertHelper {
         dialog.show();
     }
 
-    // Callback interface for handling logout confirmation
     public interface LogoutCallback {
         void onConfirm();
         void onCancel();

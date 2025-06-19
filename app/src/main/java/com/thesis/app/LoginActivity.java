@@ -16,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.thesis.app.utils.Constants;
+import com.thesis.app.utils.SessionManager;
 
 public class LoginActivity extends AppCompatActivity {
 

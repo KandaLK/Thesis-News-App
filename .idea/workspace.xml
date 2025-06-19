@@ -242,9 +242,74 @@
           <theme>@style/Theme.NewsApp.Splash</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml">
+        <config>
+          <theme>@style/Theme.NewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
         <config>
           <theme>@style/Theme.NewsApp.Splash</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml">
+        <config>
+          <theme>@style/Theme.NewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml">
+        <config>
+          <theme>@style/Theme.NewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_signup.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_delete_account.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_confirmation.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_logout_confirmation.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_news_card.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_custom_header.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/menu-v26/activity_main_drawer.xml">
@@ -273,8 +338,22 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="818044c0-4f8c-45fa-b4cb-b054ecf3a7a4" name="Changes" comment="First App Updtes">
+    <list default="true" id="818044c0-4f8c-45fa-b4cb-b054ecf3a7a4" name="Changes" comment="Layout Add(Base app Layouts)">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_delete_account.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_edit_confirmation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_logout_confirmation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_news.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_news_card.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_custom_header.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/LoginActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/SignupActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/SignupActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/NewsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/NewsItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/utils/AlertHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/thesis/app/utils/AlertHelper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,7 +363,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=MZHQW8I7TWEESKCE)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Manelka.00\.android\avd\Pixel_8.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -389,18 +468,18 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "C:/Users/Manelka.00/Desktop/ThesisApp/app/src/main/java",
-    "last_opened_file_path": "C:/Users/Manelka.00/Desktop/ThesisApp/app/src/main/java/com/thesis/app",
+    "last_opened_file_path": "C:/Users/Manelka.00/Desktop/ThesisApp/app/src/main/res/layout",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "AndroidSdkUpdater"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\res\layout" />
       <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\java\com\thesis\app" />
       <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\java\com\thesis\app\models" />
       <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\java\com\thesis\app\utils" />
       <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\res\drawable" />
-      <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\res\layout" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Manelka.00\Desktop\ThesisApp\app\src\main\java\com\thesis\app" />
@@ -572,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750277943419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Layout Add(Base app Layouts)">
+      <option name="closed" value="true" />
+      <created>1750309770908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750309770908</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -593,14 +680,15 @@
     </ignored-roots>
     <MESSAGE value="First App" />
     <MESSAGE value="First App Updtes" />
-    <option name="LAST_COMMIT_MESSAGE" value="First App Updtes" />
+    <MESSAGE value="Layout Add(Base app Layouts)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout Add(Base app Layouts)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java</url>
-          <line>68</line>
+          <line>71</line>
           <properties class="com.thesis.app.MainActivity" method="initializeFirebase">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -609,7 +697,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java</url>
-          <line>106</line>
+          <line>109</line>
           <properties class="com.thesis.app.MainActivity" method="initializeTabs">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -618,12 +706,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java</url>
-          <line>43</line>
+          <line>46</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/thesis/app/MainActivity.java</url>
-          <line>108</line>
+          <line>111</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

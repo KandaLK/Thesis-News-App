@@ -17,6 +17,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.thesis.app.utils.Constants;
+import com.thesis.app.models.User;
 
 public class SignupActivity extends AppCompatActivity {
 
