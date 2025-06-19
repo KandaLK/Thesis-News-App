@@ -1,7 +1,8 @@
-Thesis News App 📰
-A comprehensive Android news application developed as part of an academic thesis project. This app provides users with real-time news updates, personalized content, and robust user profile management features.
+## Thesis News App 📰 ##
+A comprehensive Android news application developed as part of an academic thesis project. This app provides users with real-time news updates, 
+personalized content, and robust user profile management features.
 
-🚀 Features
+## 🚀 Features ##
 Core Functionality
 Real-time News Feed: Stay updated with the latest news from various sources
 
@@ -9,86 +10,41 @@ User Authentication: Secure login and registration system using Firebase
 
 Profile Management: Complete user profile editing with image upload capabilities
 
-Personalized Experience: Customized news feed based on user preferences
+Personalized Experience: Customized news feed based on user preferences 
 
-Offline Reading: Save articles for offline access
 
-Search & Filter: Advanced search functionality with category filters
 
-User Profile Features
-Profile Image Upload: Support for gallery and camera image selection
 
-Account Security: Password change functionality with re-authentication
+## Application Screenshots ##
 
-Email Verification: Secure email update process with verification
+### Main Interface & News Feed
+![Main Screen](/screenshots/main_screen.jpeg) 
+![News Feed](/screenshots/news_feed_01.jpeg) 
+![News Feed](/screenshots/news_feed_02.jpeg)
+![Navigation Drawer](/screenshots/nav_bar.jpeg)
 
-Data Validation: Comprehensive input validation for all user data
+### User Authentication & Profile
+![Login Screen](/screenshots/login.jpeg) 
+![Registration](/screenshots/sign_up.jpeg) 
+![Splash Screen](/screenshots/splash_screen.jpeg)
 
-Real-time Updates: Instant profile synchronization across the app
+### Profile Management
+![Settings View](/screenshots/settings.jpeg) 
+![Edit Profile](/screenshots/Update_image.jpeg) 
 
-🛠️ Tech Stack
-Frontend
-Language: Java
 
-Framework: Android Native
+### Custome Dialog Messages
+![Message 01](/screenshots/delete_confirmation_dialog.jpeg) 
+![Message 02](/screenshots/cancel_confirmation.jpeg)
 
-IDE: Android Studio
 
-UI Components: Material Design Components
 
-Image Handling: CircleImageView for profile pictures
 
-Backend & Database
-Authentication: Firebase Authentication
 
-Database: Firebase Realtime Database
+**Project Status**: ✅ Active Development | 📚 Academic Assignment Project | 🎓 Educational Purpose
 
-Storage: Firebase Storage for images
+**Last Updated**: June 19, 2025
 
-Real-time Sync: Firebase real-time listeners
+**Repository**: https://github.com/KandaLK/Thesis-News-App.git
 
-Architecture & Libraries
-Design Pattern: Modern Android Architecture
 
-Image Processing: Bitmap compression and optimization
-
-Networking: Modern ActivityResultLauncher for image selection
-
-Validation: Email and password validation with Patterns API
-
-📱 Screenshots
-Screenshots will be added here showcasing the app's interface
-
-🔧 Installation
-Prerequisites
-Android Studio Arctic Fox or later
-
-Android SDK 21+
-
-Firebase project setup
-
-Java Development Kit (JDK) 8+
-
-Setup Instructions
-Clone the Repository
-
-bash
-git clone https://github.com/KandaLK/Thesis-News-App.git
-cd thesis-news-app
-Firebase Configuration
-
-Create a new Firebase project
-
-Add your Android app to the Firebase project
-
-Download google-services.json
-
-Place it in the app/ directory
-
-Dependencies
-
-Open the project in Android Studio
-
-Sync project with Gradle files
-
-Ensure all dependencies are properly resolved
