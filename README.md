@@ -29,8 +29,8 @@ Personalized Experience: Customized news feed based on user preferences
 ![Splash Screen](/screenshots/splash_screen.jpeg)
 
 ### Profile Management
-![Settings View](/screenshots/settings.jpeg) 
-![Edit Profile](/screenshots/Update_image.jpeg) 
+![Settings View](/screenshots/settings_page.jpeg) 
+![Edit Profile](/screenshots/update_image.jpeg) 
 
 
 ### Custome Dialog Messages
